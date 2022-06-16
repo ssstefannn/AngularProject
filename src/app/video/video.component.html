@@ -1,0 +1,16 @@
+<div class="video">
+    <div class="video-thumbnail">
+        <img [src]="video.thumbnailPicUrl"/>
+        <p>{{video.length}}</p>
+    </div>
+    <div class="video-info">
+        <div class="video-info-pfp">
+            <img [src]="video.pfpUrl"/>
+        </div>
+        <div class="video-info-text">
+            <h5>{{video.title}}</h5>
+            <p>{{video.author}}</p>
+            <p>{{video.views}} views • {{video.timeSinceUpload}} ago</p>
+        </div>
+    </div>
+</div>

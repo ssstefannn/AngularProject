@@ -1,0 +1,58 @@
+.video {
+    width:fit-content;
+    padding:10px;
+}
+
+.video:hover {
+    cursor: pointer;
+}
+.video-thumbnail {
+    position:relative;
+}
+
+.video-thumbnail > img {
+    width:300px;
+    height:auto;
+}
+
+.video-thumbnail > p {
+    position:absolute;
+    font-size:small;
+    right:5px;
+    bottom:-5px;
+    color:white;
+    background-color: black;
+    border-radius: 3px;
+    padding:3px;
+    font-weight: 500;
+}
+
+.video-info {
+    display: flex;
+    align-items: flex-start;
+    margin-top:10px;
+}
+
+.video-info-text {
+    margin-top:-25px;
+    margin-left:15px;
+}
+
+.video-info-text > h5 {
+    font-weight: 500;
+    font-size: 15px;
+    margin-bottom: 5px;
+}
+
+.video-info-text > p {
+    margin:0;
+    font-size:12px;
+    margin-bottom:5px;
+    color:gray;
+}
+
+.video-info-pfp > img {
+    height:40px;
+    width:40px;
+    border-radius: 100%;
+}
