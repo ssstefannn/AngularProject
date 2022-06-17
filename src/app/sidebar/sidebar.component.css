@@ -1,5 +1,5 @@
 .sidebar {
-    width: 230px;
+    width: fit-content;
     height:92vh;
     /*make element stay at left but below the navbar*/
     position: fixed;
@@ -7,6 +7,8 @@
     left: 0px;
     z-index: 2;
     background-color: #fff;
+    display:flex;
+    flex-direction: column;
 
 }
 
@@ -29,7 +31,7 @@
 
 
 .sidebar-item {
-    margin-left:10px;
+    margin:10px;
     display:flex;
     align-items: center;
 }

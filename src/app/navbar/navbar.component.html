@@ -1,7 +1,9 @@
 <div class="navbar-container">
     <div class="navbar-header">
-        <c-icon name="cil-hamburger-menu" size="xl"></c-icon>
-        <a (click)="hamburgerClickedEvent()" class="navbar-brand">
+        <div (click)="hamburgerClickedEvent()">
+            <c-icon name="cil-hamburger-menu" size="xl"></c-icon>
+        </div>
+        <a  class="navbar-brand">
             <img src="https://www.caffelena.org/wp-content/uploads/2019/10/new-youtube-logo-e1570929090859.jpg" alt="logo">
         </a>
     </div>
@@ -11,7 +13,7 @@
                 <div *ngIf="searchClicked" class="navbar-searchbar-lefticon">
                     <c-icon name="cil-magnifying-glass" size="lg"></c-icon>
                 </div>
-                <input (focus)="searchClicked=true" (blur)="searchClicked=false" id="search" type="text" class="navbar-searchbar-input" placeholder={{hamburgerClicked}}>
+                <input (focus)="searchClicked=true" (blur)="searchClicked=false" id="search" type="text" class="navbar-searchbar-input" placeholder="Search">
             </form>
             
             <button class="navbar-searchbar-button">
