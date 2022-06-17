@@ -3,7 +3,7 @@
         <div class="sidebar-item-logo">
             <c-icon name="cil-home" size="xl"></c-icon>
         </div>
-        <div class="sidebar-item-title">
+        <div *ngIf="!hamburgerClicked" class="sidebar-item-title">
             <p>Home</p>
         </div>
     </div>

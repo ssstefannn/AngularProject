@@ -12,7 +12,6 @@
     align-items: center;
     justify-content: space-between;
     border-bottom: 1px solid #c5c5c5;
-    
 }
 
 .navbar-header {
@@ -35,7 +34,7 @@
     max-height: 30px;
 }
 
-.navbar-searchbar > input {
+.navbar-searchbar-form > input {
     height:30px;
     width:500px;
     padding:5px;
@@ -47,10 +46,37 @@
 .navbar-searchbar {
     display:flex;
     align-items: center;
+    position:relative;
 }
 
 .navbar-searchbar > button:hover{
     cursor:pointer;
+}
+
+.navbar-searchbar-form {
+    padding-left:40px;
+    display: flex;
+    align-items: center;
+}
+/* when the input is clicked do not add border */
+.navbar-searchbar-form > input:focus {
+    outline:none;
+    border-left-color: white;
+}
+
+.navbar-searchbar-clickedform {
+    outline-style: solid;
+    outline-color: blue;
+    outline-width: 1px;
+    outline-offset: -1px;
+
+
+}
+
+.navbar-searchbar-lefticon {
+    position:absolute;
+    left:15px;
+    
 }
 
 .navbar-searchbar-button {
