@@ -16,7 +16,7 @@
                 <input (focus)="searchClicked=true" (blur)="searchClicked=false" id="search" type="text" class="navbar-searchbar-input" placeholder="Search">
             </form>
             
-            <button class="navbar-searchbar-button">
+            <button (click)="searchClickedEvent()" class="navbar-searchbar-button">
                 <c-icon name="cil-magnifying-glass" size="xl"></c-icon>
             </button>
             <button class="navbar-searchbar-voice">
@@ -35,7 +35,7 @@
             <c-icon name="cil-bell" size="xl"></c-icon>
         </div>
         <div class="navbar-right-item">
-            <img  class="navbar-right-profile-pic" src="https://yt3.ggpht.com/yti/APfAmoHsMlNKIa_5pq7YYJYP73cnyjJZwRPtVvX7sHtK8Q=s88-c-k-c0x00ffffff-no-rj-mo" alt="profile-pic">
+            <img  id="pfp" class="navbar-right-profile-pic" src="https://yt3.ggpht.com/yti/APfAmoHsMlNKIa_5pq7YYJYP73cnyjJZwRPtVvX7sHtK8Q=s88-c-k-c0x00ffffff-no-rj-mo" alt="profile-pic">
         </div>
     </div>
 </div>
